@@ -138,13 +138,11 @@
     <!-- REDIRECTION VERS CAMERA -->
     <script>
       function redirectWithConfirmation() {
-        var confirmRedirect = confirm(
-        );
         var courir = localStorage.getItem("courir") === "true";
         var Pascourir = localStorage.getItem("courir") === "false";
-        if (confirmRedirect && courir) {
+        if (courir) {
           window.location.href = "./QR6M1.html";
-        } else if (confirmRedirect && Pascourir) {
+        } else if (Pascourir) {
           window.location.href = "./QR6M2.html";
         }
       }

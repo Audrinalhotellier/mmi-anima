@@ -171,13 +171,10 @@ gesture-handler
         var choixPasPendentif = localStorage.getItem('choixPendentif') === 'false';
         var liberer = localStorage.getItem('liberer') === 'true';
         var PasLiberer = localStorage.getItem('liberer') === 'false';
-        var confirmRedirect = confirm(
-          "Vous allez etre dirigé vers la camera, veuilliez scanner le qrcode"
-        );
-
-        if (confirmRedirect && choixPendentif || confirmRedirect && PasLiberer) {
+      
+        if (choixPendentif || PasLiberer) {
           window.location.href = "./QR11M1.html";
-        } else if (confirmRedirect) {
+        } else {
           window.location.href = "./QR11M2.html";
         }
       }

@@ -73,7 +73,7 @@
 
     <!-- SON -->
     <audio id="ambianceAudio" loop>
-      <source src="../son/QR1P.mp3" type="audio/mp3" />
+      <source id="audioSource" src="../son/QR1P.mp3" type="audio/mp3" />
       Your browser does not support the audio tag.
     </audio>
     <!-- SON -->
@@ -98,7 +98,7 @@
         Chapelle Sant’ Antone.
       </p>
       <div class="button-container">
-        <button onclick="redirectWithConfirmation();">&#8594;</button>
+        <button onclick="redirectWithConfirmationAR();">&#8594;</button>
       </div>
     </div>
 
@@ -119,18 +119,13 @@
     <div id="container10" class="container hidden"></div>
     <!-- EXPLICATION/EGNIME/TEXTE -->
 
-    <!-- REDIRECTION VERS CAMERA -->
-    <script>
-      function redirectWithConfirmation() {
-        var confirmRedirect = confirm(
-          "Vous allez etre dirigé vers la camera, veuilliez scanner le qrcode"
-        );
-        if (confirmRedirect) {
-          window.location.href = "../ar/QR2P.html";
-        }
-      }
-    </script>
-    <!-- REDIRECTION VERS CAMERA -->
+  <!-- REDIRECTION VERS AR -->
+  <script>
+    function redirectWithConfirmationAR() {
+        window.location.href = "../ar/spaddistu.html";
+    }
+  </script>
+  <!-- REDIRECTION VERS AR -->
 
     <!-- CONTAINER -->
     <script src="../script/text.js"></script>

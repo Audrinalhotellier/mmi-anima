@@ -103,7 +103,7 @@
         Maintenant, rends-toi au Ponte Novu, et bonne chance.
       </p>
       <div class="button-container">
-        <button onclick="redirectWithConfirmationR();">&#8594;</button>
+        <button onclick="redirectWithConfirmationA();">&#8594;</button>
       </div>
     </div>
 
@@ -155,21 +155,11 @@
     <!-- REDIRECTION VERS CAMERA -->
     <script>
       function redirectWithConfirmationA() {
-        var confirmRedirect = confirm(
-          "Vous allez être dirigé vers la camera, veuilliez scanner le qrcode."
-        );
-        if (confirmRedirect) {
-          window.location.href = "../ar/pendentif.html";
-        }
+        window.location.href = "../ar/pendentif.html";
       }
 
       function redirectWithConfirmationR() {
-        var confirmRedirect = confirm(
-          "Vous allez être dirigé vers la camera, veuilliez scanner le qrcode."
-        );
-        if (confirmRedirect) {
-          window.location.href = "../ar/QR3M.html";
-        }
+        window.location.href = "../ar/straga.html";
       }
     </script>
     <!-- REDIRECTION VERS CAMERA -->

@@ -139,18 +139,15 @@
     <!-- REDIRECTION VERS CAMERA -->
     <script>
       function redirectWithConfirmation() {
-        var confirmRedirect = confirm(
-          "Vous allez etre dirigé vers la camera, veuilliez scanner le qrcode"
-        );
         var Fata = localStorage.getItem("sciaquajola") === "false";
         var Sciaquajola = localStorage.getItem("sciaquajola") === "true";
         var Bougie = localStorage.getItem("bougie") === "true";
 
-        if (confirmRedirect && Fata) {
+        if (Fata) {
           window.location.href = "./QR13M1.html";
-        } else if (confirmRedirect && Sciaquajola && Bougie) {
+        } else if (Sciaquajola && Bougie) {
           window.location.href = "./QR13M2.html";
-        } else if (confirmRedirect && Sciaquajola && PasBougie) {
+        } else if (Sciaquajola && PasBougie) {
           window.location.href = "./QR13M3.html";
         }
       }

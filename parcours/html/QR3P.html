@@ -147,15 +147,12 @@
     <!-- REDIRECTION VERS CAMERA -->
     <script>
       function redirectWithConfirmation() {
-        var confirmRedirect = confirm(
-          "Vous allez etre dirigé vers la camera, veuilliez scanner le qrcode"
-        );
         var Bougie = localStorage.getItem("bougie") === "true";
         var Anneau = localStorage.getItem("bougie") === "false";
-        if (confirmRedirect && Anneau) {
-          window.location.href = "./anneau.html";
-        } else if (confirmRedirect && Bougie) {
-          window.location.href = "./bougie.html";
+        if (Anneau) {
+          window.location.href = "../ar/anneau.html";
+        } else if (Bougie) {
+          window.location.href = "../ar/bougie.html";
         }
       }
     </script>

@@ -111,15 +111,12 @@
     <script>
       function redirectWithConfirmation() {
         var Lea = localStorage.getItem("lea") === "true";
-        var confirmRedirect = confirm(
-          "Vous allez etre dirigé vers la camera, veuilliez scanner le qrcode"
-        );
-
-        if (confirmRedirect && Lea) {
+        if (Lea) {
           window.location.href = "./QR6PLEA2.html";
-        } else if (confirmRedirect) {
+        } else {
           window.location.href = "./QR6PLEA1.html";
         }
+
       }
     </script>
     <!-- REDIRECTION VERS CAMERA -->
